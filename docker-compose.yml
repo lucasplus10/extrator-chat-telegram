@@ -1,0 +1,10 @@
+services:
+  python:
+    build:
+      context: .
+    network_mode: host
+    volumes:
+      - ./in:/in
+      - ./out:/out
+    ports:
+      - 5679:5679
